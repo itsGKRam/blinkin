@@ -9,12 +9,30 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mantine/core": "^4.0.0",
+    "@mantine/dates": "^4.0.0",
+    "@mantine/dropzone": "^4.0.0",
+    "@mantine/hooks": "^4.0.0",
+    "@mantine/modals": "^4.0.0",
+    "@mantine/next": "^4.0.0",
+    "@mantine/notifications": "^4.0.0",
+    "@mantine/prism": "^4.0.0",
+    "@mantine/rte": "^4.0.0",
+    "@mantine/spotlight": "^4.0.0",
+    "dayjs": "^1.10.8",
+    "match-sorter": "^6.3.1",
+    "nanoid": "^3.3.1",
     "next": "12.1.0",
+    "phosphor-react": "^1.4.1",
     "react": "17.0.2",
+    "react-contenteditable": "^3.3.6",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.2",
     "eslint": "8.10.0",
-    "eslint-config-next": "12.1.0"
+    "eslint-config-next": "12.1.0",
+    "postcss": "^8.4.8",
+    "tailwindcss": "^3.0.23"
   }
 }

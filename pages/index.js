@@ -7,7 +7,7 @@ export default function Unique() {
         {
             tag: 'h1',
             label: 'Heading 1',
-            attributes: 'style={{color:`red`}}',
+            attributes: '',
         },
         {
             tag: 'h2',
@@ -56,8 +56,6 @@ export default function Unique() {
     const [openMenu, setOpenMenu] = useState(false);
     const [current, setCurrent] = useState(0);
 
-    console.log(current);
-
     const onKeyDown = (e) => {
         if (e.key === '/') {
             e.preventDefault();
@@ -100,7 +98,14 @@ export default function Unique() {
                         className=' blinkIn-group blinkIn-w-1/2 blinkIn-flex blinkIn-flex-row blinkIn-gap-2 blinkIn-items-center'
                     >
                         <div className=' blinkIn-hidden group-hover:blinkIn-flex'>
-                            <Plus size={24} weight='duotone' />
+                            <Plus
+                                className=' blinkIn-cursor-pointer'
+                                onClick={() => {
+                                    setOpenMenu(true);
+                                }}
+                                size={24}
+                                weight='duotone'
+                            />
                             <DotsSixVertical size={24} weight='duotone' />
                         </div>
                         <div
@@ -132,7 +137,6 @@ export default function Unique() {
                     </div>
                 );
             })}
-
             {openMenu && (
                 <div className=' blinkIn-bg-gray-300 blinkIn-flex blinkIn-items-center blinkIn-flex-col blinkIn-p-2 blinkIn-gap-1 blinkIn-rounded-sm'>
                     {allowedTags.map((item, key) => (
